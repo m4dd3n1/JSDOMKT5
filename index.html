@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="cardForm" class="form">
+            <select name="" id="bank">
+                <option value="СБЕР">СБЕР</option>
+                <option value="Тинькофф">Тинькофф</option>
+            </select>
+            <select name="" id="type">
+                <option value="VISA">VISA</option>
+                <option value="master card">MasterCard</option>
+                <option value="maestro">Maestro</option>
+            </select>
+            <input type="text" placeholder="CARD NUMBER" id="number">
+            <input type="text" placeholder="VALID THRU (MONTH)" id="month">
+            <input type="text" placeholder="VALID THRU (YEAR)" id="year">
+            <input type="text" placeholder="CARDHOLDER" id="name">
+            <input type="text" placeholder="CVV/CVC" id="cvv">
+            <button type="submit">SUBMIT</button>
+        </form>
+        <div class="card">
+            <img src="" alt="bank" class="bank">
+            <div class="card_info">
+                <p class="number">0000 0000 0000 0000</p>
+                <div class="flex">
+                    <p class="date"><span class="monthRes">00</span>/<span class="yearRes">00</span></p>
+                    <p class="cvv">000</p>
+                </div>
+                <div class="flex_name">
+                    <p class="name">CARDHOLDER</p>
+                    <img src="" alt="visa" class="system">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
